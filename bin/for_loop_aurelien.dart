@@ -17,10 +17,14 @@ void main() {
 printSquare(int size) {
   for (int i = 0; i < size; i++) {
     for (int j = 1; j <= size; j++) {
-      stdout.write(i * size + j);
-      if (i * size + j < 10) {
+      //Writing value
+      int value = i * size + j;
+      stdout.write(value);
+
+      //Adding space to keep a beautiful square
+      if (value < 10) {
         stdout.write("   ");
-      } else if (i * size + j < 100) {
+      } else if (value < 100) {
         stdout.write("  ");
       } else {
         stdout.write(" ");
